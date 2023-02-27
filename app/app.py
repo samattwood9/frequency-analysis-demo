@@ -5,7 +5,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title("Frequency analysis demo")
+st.set_page_config(page_title='Frequency analysis', page_icon='📊')
+
+st.title("📊 Frequency analysis")
 
 user_text = st.text_area(
     "Enter text:",
