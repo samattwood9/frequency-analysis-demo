@@ -9,6 +9,8 @@ st.set_page_config(page_title='Frequency analysis', page_icon='📊')
 
 st.title("📊 Frequency analysis")
 
+st.write('## Enter a plain text message')
+
 user_text = st.text_area(
     "Enter text:",
     "Write here and observe how the frequency of characters changes!"
@@ -31,10 +33,10 @@ sns.barplot(df, x='letter', y='count', hue='Key')
 
 st.pyplot(fig1)
 
-st.write('## Breaking the Caesar Cipher')
+st.write('## Enter an encrypted message')
 
 cipher_text = st.text_area(
-    "Enter an encrypted text here (why not use: https://ciphereditor.com/explore/caesar-cipher):",
+    "Enter an encrypted text here (why not use: https://ciphereditor.com/explore):",
     "Zulwh khuh dqg revhuyh krz wkh iuhtxhqfb ri fkdudfwhuv fkdqjhv!"
 )
 
